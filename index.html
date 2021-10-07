@@ -69,7 +69,7 @@
       <div class="test test07">
         <span class="test-tit">7. attr( ) - 요소의 속성값을 가져오거나 변경 <span class="desc">** 하나의 인자를 주면 해당 속성 값만을 조회하고 두 개를 주면 해당 속성 값을 변경함</span></span>
         <div class="test-content">
-          <input name="" type="text" value="" placeholder="입력해주세요">
+          <input name="changePh" type="text" value="" placeholder="입력해주세요">
         </div>
         <button class="btn off1" type="button">reset</button>
         <button class="btn" type="button">Click</button>
@@ -85,7 +85,7 @@
       <div class="test test09">
         <span class="test-tit">9. blur( ) - 포커스를 잃었을 때 발생 <span class="desc">** focusout 포커스를 나갔을 때 발생</span></span>
         <div class="test-content">
-          <input id="here" name="" type="text" value="">
+          <input id="here" name="here" type="text" value="">
         </div>
       </div>
       <div class="test test10">
@@ -304,9 +304,9 @@
         <button class="btn" type="button">Click</button>
       </div>
       <div class="test test32">
-        <span class="test-tit">32. load( ) - 서버에서 데이터를 읽은 후, 읽어 들인 HTML 코드를 선택한 요소에 배치함<span class="desc">ex) test.html에 존재하는 HTML 코드에서 <span>요소를 읽은 후 id가 "loadTest"인 요소에 배치한다.</span></span>
+        <span class="test-tit">32. load( ) - 서버에서 데이터를 읽은 후, 읽어 들인 HTML 코드를 선택한 요소에 배치함<span class="desc">ex) test.html에 존재하는 HTML 코드에서 span요소를 읽은 후 id가 "loadTest"인 요소에 배치한다.</span></span>
         <div class="test-content">
-          <span id="loadTest"></span>
+          <p id="loadTest"></p>
           <button class="btn-request" type="button">request</button>
         </div>
         <button class="btn off1" type="button">reset</button>
@@ -452,7 +452,7 @@
         <button class="btn" type="button">Click</button>
       </div>
       <div class="test test46">
-        <span class="test-tit">46. removeAttr( ) - 선택한 요소의 특정 속성을 제거합니다.</span>
+        <span class="test-tit">46. removeAttr( ) - 선택한 요소의 특정 속성을 제거합니다. <span class="desc">ex) placeholder 속성값 제거</span></span>
         <div class="test-content">
           <input placeholder="입력해주세요" type="text">
         </div>
@@ -477,8 +477,6 @@
         <div class="test-content">
           <p>현재 scrollTop 값: <span class="top">0</span></p>
         </div>
-        <button class="btn off1" type="button">reset</button>
-        <button class="btn" type="button">Click</button>
       </div>
       <div class="test test50">
         <span class="test-tit">50. show( ) - 요소의 css가 display: none;일 때 요소를 display:block;으로 바꿔주는 함수</span>
