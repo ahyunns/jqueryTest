@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Test</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css?v=1">
+</head>
+<body>
+  <header>
+    <h1 class="tit">jQuery Test</h1>
+  </header>
+  <main>
+    <div id="wrap">
+      <div class="test test01">
+        <span class="test-tit">1. add( ) - 어떤 요소를 추가로 선택할 때 사용</span>
+        <div class="test-content">
+          <h2>Lorem</h2>
+          <h3>Lorem</h3>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test02">
+        <span class="test-tit">2. addClass( ) - 선택한 요소에 클래스를 생성</span>
+        <div class="test-content">
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">p 요소에 .highlight 클래스 추가</button>
+      </div>
+      <div class="test test03">
+        <span class="test-tit">3. after( ) - 선택한 요소 뒤에 새 요소 추가</span>
+        <div class="test-content">
+          <h2>Lorem ipsum dolor</h2>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test04">
+        <span class="test-tit">4. animate( ) - 애니메이션 효과 만드는 메서드</span>
+        <div class="test-content">
+          <div class="box"></div>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test05">
+        <span class="test-tit">5. append( ) - 선택된 요소의 마지막에 새로운 요소나 콘텐츠 추가 <span class="desc">** A.append(B): A에 B를 추가</span></span>
+        <div class="test-content">
+          <ul class="list">
+            <li>item 1</li>
+            <li>item 2</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test06">
+        <span class="test-tit">6. appendTo( ) - 선택한 요소를 해당 요소의 마지막에 추가 <span class="desc">** A.appendTo(B): B에 A를 추가 // .append() 메소드와 동일 기능수행. 하지만, 추가될 내용과 타겟의 위치가 서로 반대됨</span></span>
+        <div class="test-content">
+          <p>안녕하세요.</p>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test07">
+        <span class="test-tit">7. attr( ) - 요소의 속성값을 가져오거나 변경 <span class="desc">** 하나의 인자를 주면 해당 속성 값만을 조회하고 두 개를 주면 해당 속성 값을 변경함</span></span>
+        <div class="test-content">
+          <input name="" type="text" value="" placeholder="입력해주세요">
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test08">
+        <span class="test-tit">8. before( ) - 선택한 요소 앞에 새 요소 추가</span>
+        <div class="test-content">
+          <h2>Lorem ipsum dolor</h2>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test09">
+        <span class="test-tit">9. blur( ) - 포커스를 잃었을 때 발생 <span class="desc">** focusout 포커스를 나갔을 때 발생</span></span>
+        <div class="test-content">
+          <input id="here" name="" type="text" value="">
+        </div>
+      </div>
+      <div class="test test10">
+        <span class="test-tit">10. change( ) - 포커스가 다른 요소로 바뀌면 이벤트를 발생시킴 <span class="desc">ex) select박스의 값을 바꾸면 그 값을 화면에 바꿔서 표시</span></span>
+        <div class="test-content">
+          <select id="fruits">
+            <option value="">선택</option>
+            <option value="사과">사과</option>
+            <option value="바나나">바나나</option>
+            <option value="수박">수박</option>
+          </select>
+          <span class="txt"></span>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+      </div>
+      <div class="test test11">
+        <span class="test-tit">11. children( ) - 선택한 요소의 모든 자식 요소를 선택, DOM 트리 아래로 단일 레벨을 이동함 <span class="desc">ex) depth2 클릭했을 때 depth2의 모든 자식 요소 선택</span></span>
+        <div class="test-content">
+          <nav>
+            <ul class="depth1">
+              <li><a href="javascript:;">주메뉴1</a>
+                <ul class="depth2">
+                  <li><a href="#">서브메뉴1</a></li>
+                  <li><a href="#">서브메뉴2</a></li>
+                  <li><a href="#">서브메뉴3</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;">주메뉴2</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+      </div>
+      <div class="test test12">
+        <span class="test-tit">12. click( ) - 선택한 요소를 클릭했을 때 특정 작업을 함</span>
+        <div class="test-content">
+          <button class="btn-bg" type="button">여기를 클릭하면 배경색 바뀜</button>
+        </div>
+      </div>
+      <div class="test test13">
+        <span class="test-tit">13. css( ) - 선택한 요소의 css 속성값을 가져오거나 style 속성을 추가함</span>
+        <div class="test-content">
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test14">
+        <span class="test-tit">14. detach( ) - 선택한 요소를 DOM에서 제거 <span class="desc">** 제거한다는 면에서는 .remove()와 같으나, .detach는 제거한 요소를 저장하여 다시 사용가능 // 제거와 삽입을 반복할 때 많이 사용</span></span>
+        <div class="test-content">
+          <div class="txt-wrap">
+            <p class="hello">안녕하세요.</p>
+            <p>.detach() 메소드</p>
+            <p class="hello">테스트입니다.</p>
+          </div>
+          <button id="btnDetach" type="button">문장 삭제</button>
+          <button id="btnRestore" type="button">문장 복구</button>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+      </div>
+      <div class="test test15">
+        <span class="test-tit">15. each( ) - 선택한 요소 각각에 대하여 for문처럼 요소들을 반복 수행함<span class="desc">object와 배열 모두에서 사용하는 반복함수. 즉, length 속성을 갖는 배열과 유사배열 객체들을 index 기준으로 반복가능.<br>첫번째 매개변수는 배열이나 객체를 받음. 두번째 매개변수는 콜백함수를 받으며 콜백함수의 인자로는 index와 값을 인자로 가짐</span></span>
+        <div class="test-content">
+          <h2>첫번째</h2>
+          <h2>두번째</h2>
+          <h2>세번째</h2>
+          <h2>네번째</h2>
+          <h2>다섯번째</h2>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test16">
+        <span class="test-tit">16. empty( ) - 선택한 요소의 자식 요소를 모두 삭제함 <span class="desc">// 자식을 삭제하기 때문에 선택 객체는 남아있음 .remove() 나 .detach() 메소드와는 달리 선택된 요소 그 자체는 삭제되지 않음</span></span>
+        <div class="test-content">
+          <ul>
+            <li>선택한 요소를 삭제하고 싶다면(데이터 및 이벤트 포함) .remove() 메서드를 사용합니다.</li>
+            <li>선택한 요소의 컨텐츠만 삭제하고 싶다면 .empty() 메서드를 사용합니다.</li>
+            <li>선택한 요소를 삭제하고 싶다면(데이터 및 이벤트 불포함) .detach() 메서드를 사용합니다.</li>
+            <li>선택한 요소의 부모 요소를 삭제하고 싶다면 .unwrap() 메서드를 사용합니다.</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn btn01" type="button">.empty() 삭제</button>
+        <button class="btn btn02" type="button">.remove() 삭제</button>
+        <button class="btn btn03" type="button">.detach() 삭제</button>
+      </div>
+      <div class="test test17">
+        <span class="test-tit">17. eq( ) - 선택한 요소 중에서 전달받은 index에 해당하는 요소를 선택함</span>
+        <div class="test-content">
+          <ul>
+            <li>.eq() 메소드는 선택한 요소에 인덱스 번호에 해당하는 요소를 찾음</li>
+            <li>.eq() 메소드는 선택한 요소에 인덱스 번호에 해당하는 요소를 찾음</li>
+            <li>.eq() 메소드는 선택한 요소에 인덱스 번호에 해당하는 요소를 찾음</li>
+            <li>.eq() 메소드는 선택한 요소에 인덱스 번호에 해당하는 요소를 찾음</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">2번째 요소 선택</button>
+      </div>
+      <div class="test test18">
+        <span class="test-tit">18. even( ) - 짝수 index 요소를 선택하는 선택자</span>
+        <div class="test-content">
+          <ul>
+            <li>0. Lorem</li>
+            <li>1. Ipsum</li>
+            <li>2. Dolor</li>
+            <li>3. Sit</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test19">
+        <span class="test-tit">19. fadeIn( ) - 선택한 요소를 서서히 나타나게 함</span>
+        <div class="test-content">
+          <div class="circle"></div>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test20">
+        <span class="test-tit">20. fadeOut( ) - 선택한 요소를 서서히 사라지게 함</span>
+        <div class="test-content">
+          <div class="circle"></div>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test21">
+        <span class="test-tit">21. find( ) - 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용 <span class="desc">** find(): 선택된 객체의 모든 자식태그들을 검색해서 찾음, children(): 선택된 객체의 바로 1단계 아래 자식을 찾음</span></span>
+        <div class="test-content">
+          <p>p 요소 중에서 <em>이탤릭 단어의 글자색</em>을 <em>빨간색</em>으로 변경한다.</p>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test22">
+        <span class="test-tit">22. focusin( ) - focus가 들어갔을 때 이벤트 발생</span>
+        <div class="test-content">
+          <input id="inputIn" type="text">
+        </div>
+      </div>
+      <div class="test test23">
+        <span class="test-tit">23. focusout( ) - focus가 빠져나왔을 때 이벤트 발생<span class="desc">ex) 검색버튼 클릭 후 input태그를 focusout 시 input태그 hidden처리</span></span>
+        <div class="test-content">
+          <button class="btn-search" type="submit">검색</button>
+          <input class="hidden" id="inputOut" type="text">
+        </div>
+      </div>
+      <div class="test test24">
+        <span class="test-tit">24. hasClass( ) - 특정한 클래스가 존재하는지 찾는 메소드<span class="desc">ex) .btn04 가 있다면 true 알림창 뜸</span></span>
+        <div class="test-content">
+          <button class="btn04" type="button">btn04</button>
+        </div>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test25">
+        <span class="test-tit">25. height( ) - 선택한 요소 집합의 첫 번째 요소의 높이를 반환하거나, 선택된 요소의 높이를 인수로 전달받은 값으로 설정한다.</span>
+        <div class="test-content">
+          <input id="heightVal" placeholder="높이값을 입력해주세요" type="number">
+          <button class="btn-change" type="button">높이 변경하기</button>
+          <div class="box"></div>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+      </div>
+      <div class="test test26">
+        <span class="test-tit">26. hover( ) - 객체에 마우스가 올라왔을 때, 마우스 포인터가 객체로부터 떠났을 때 발생하는 이벤트</span>
+        <div class="test-content">
+          <p>여기에 마우스를 올려주세요.</p>
+        </div>
+      </div>
+      <div class="test test27">
+        <span class="test-tit">27. index( ) - 요소가 부모의 몇 번째 자식인지를 반환하는 메소드<span class="desc">ex) 아래의 li에서 내가 클릭한 요소가 몇 번째 순서인지 alert으로 띄우기</span></span>
+        <div class="test-content">
+          <ul>
+            <li>차례</li>
+            <li>목차</li>
+            <li>본문</li>
+          </ul>
+        </div>
+      </div>
+      <div class="test test28">
+        <span class="test-tit">28. is( ) - 선택한 요소 중 하나가 is(선택한 요소)와 일치하는지 확인, 결과값은 boolean 값으로 나타남</span>
+        <div class="test-content">
+          <ul class="list">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ul>
+        </div>
+        <button class="btn" type="button">확인</button>
+      </div>
+      <div class="test test29">
+        <span class="test-tit">29. keydown( ) - 키보드를 눌렀을 때 실행(한번 실행) Ctrl, Alt, Shift 등 키 작동, 이전 누른 값 정보를 가지고 있음<span class="desc">** keypress: 키보드를 눌렀을 때 실행(누르고 있는 동안 계속 실행), Ctrl, Alt, Shift 등 키 작동 안 함, 이전 누른 값 정보를 가지고 있음</span></span>
+        <div class="test-content">
+          <input id="inputKdown" placeholder="입력해주세요" type="text">
+        </div>
+      </div>
+      <div class="test test30">
+        <span class="test-tit">30. keyup( ) - 키보드에서 손을 뗐을 때 실행, 현재 누른 값을 가지고 있음</span>
+        <div class="test-content">
+          <input id="inputKup" placeholder="입력해주세요" type="text">
+        </div>
+      </div>
+      <div class="test test31">
+        <span class="test-tit">31. length( ) - 선택한 요소의 개수를 반환하는 속성</span>
+        <div class="test-content">
+          <ul>
+            <li>Lorem</li>
+            <li>ipsum</li>
+            <li>dolor</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test32">
+        <span class="test-tit">32. load( ) - 서버에서 데이터를 읽은 후, 읽어 들인 HTML 코드를 선택한 요소에 배치함<span class="desc">ex) test.html에 존재하는 HTML 코드에서 <span>요소를 읽은 후 id가 "loadTest"인 요소에 배치한다.</span></span>
+        <div class="test-content">
+          <span id="loadTest"></span>
+          <button class="btn-request" type="button">request</button>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+      </div>
+      <div class="test test33">
+        <span class="test-tit">33. mouseenter( ) - 마우스 커서가 특정 영역에 들어오면 동작시킴</span>
+        <div class="test-content">
+          <span class="box1" id="mouseEnter">mouseenter : 마우스를 여기로 가져와주세요.</span>
+        </div>
+      </div>
+      <div class="test test34">
+        <span class="test-tit">34. mouseleave( ) - 마우스 커서가 특정 영역을 벗어나면 함수를 동작시킴</span>
+        <div class="test-content">
+          <span class="box1" id="mouseLeave">mouseleave : 마우스를 이 영역 밖으로 가져가주세요.</span>
+        </div>
+      </div>
+      <div class="test test35">
+        <span class="test-tit">35. next( ) - 선택한 요소의 다음 요소를 선택합니다.</span>
+        <div class="test-content">
+          <button class="btn-test" type="button">Click</button>
+          <button class="btn-test" type="button">Click</button>
+          <button class="btn-test" type="button">Click</button>
+          <button class="btn-test" type="button">Click</button>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+      </div>
+      <div class="test test36">
+        <span class="test-tit">36. not( ) - 선택한 요소 중 특정 선택자를 제외한 요소를 선택합니다.<span class="desc">ex) 버튼을 클릭하면 클래스명이 select이 아닌 요소를 빨간색으로 표시 .not(".select")</span></span>
+        <div class="test-content">
+          <ul>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test37">
+        <span class="test-tit">37. odd( ) - 홀수 index 요소를 선택하는 선택자</span>
+        <div class="test-content">
+          <ul>
+            <li>0. Lorem</li>
+            <li>1. Ipsum</li>
+            <li>2. Dolor</li>
+            <li>3. Sit</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test38">
+        <span class="test-tit">38. offset( ) - 선택한 요소의 좌표값을 가져오거나 특정 좌표로 이동시킵니다.</span>
+        <div class="test-content">
+          <div class="circle"></div>
+          <span>원의 top값: <em class="ot">0</em></span><br>
+          <span>원의 left값: <em class="ol">0</em></span>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test39">
+        <span class="test-tit">39. on( ) - 특정 요소에 이벤트 바인딩하기 위해 사용함 <span class="desc">** .on() 메소드를 사용하면 하나의 이벤트 핸들러에 여러 개의 이벤트를 동시에 바인딩할 수 있다.</span></span>
+        <div class="test-content">
+          <span>여기를 클릭</span>
+        </div>
+      </div>
+      <div class="test test40">
+        <span class="test-tit">40. parent( ) - 해당 요소의 바로 위에 존재하는 하나의 부모 요소를 반환합니다.</span>
+        <div class="test-content">
+          <ul>
+            <li>li 요소</li>
+            <li>li 요소
+              <p>p 요소 (기준)
+                <span>span 요소</span>
+              </p>
+            </li>
+            <li>li 요소</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test41">
+        <span class="test-tit">41. parents( ) - 선택한 요소의 조상요소를 모두 반환합니다.</span>
+        <div class="test-content">
+          <ul>
+            <li>li 요소</li>
+            <li>li 요소
+              <p>p 요소 (기준)
+                <span>span 요소</span>
+              </p>
+            </li>
+            <li>li 요소</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test42">
+        <span class="test-tit">42. prepend( ) - 선택한 요소의 내용 앞에 콘텐트를 추가함</span>
+        <div class="test-content">
+          <ul>
+            <li>Lorem</li>
+            <li>ipsum</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test43">
+        <span class="test-tit">43. prependTo( ) - 선택한 타겟 처음 위치에 새로운 요소를 추가합니다. <span class="desc">** A.prependTo(B): A가 B사이의 처음에 추가된다.</span></span>
+        <div class="test-content">
+          <ul>
+            <li>Lorem</li>
+            <li>ipsum</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test44">
+        <span class="test-tit">44. prop( ) - 지정한 선택자를 가진 첫번째 요소의 속성값을 가져오거나 속성값을 추가함 <span class="desc">** 주의할 점: HTML입장에서의 속성(attribute)이 아닌 JavaScript 입장에서의 속성(property)이다.</span></span>
+        <div class="test-content">
+          <p><a href="#">링크</a></p>
+          <span>속성값: <em>0</em></span>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test45">
+        <span class="test-tit">45. remove( ) - 선택한 요소를 제거하는 메소드</span>
+        <div class="test-content">
+          <ul>
+            <li>안녕하세요</li>
+            <li>remove</li>
+            <li>테스트입니다</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test46">
+        <span class="test-tit">46. removeAttr( ) - 선택한 요소의 특정 속성을 제거합니다.</span>
+        <div class="test-content">
+          <input placeholder="입력해주세요" type="text">
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test47">
+        <span class="test-tit">47. removeClass( ) - 특정 요소의 class를 제거합니다.</span>
+        <div class="test-content">
+          <span><em class="red">red 클래스</em>를 제거합니다.</span>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test48">
+        <span class="test-tit">48. resize( ) - window 크기가 바뀔 때 어떤 작업을 할 수 있게 합니다. <span class="desc">ex) 브라우저 전체의 너비가 800미만일 때 alert창 뜸</span></span>
+        <div class="test-content">
+        </div>
+      </div>
+      <div class="test test49">
+        <span class="test-tit">49. scroll( ) - 스크롤바가 이동할 때마다 이벤트 발생시키거나 강제로 스크롤이벤트 발생시키는데 사용</span>
+        <div class="test-content">
+          <p>현재 scrollTop 값: <span class="top">0</span></p>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test50">
+        <span class="test-tit">50. show( ) - 요소의 css가 display: none;일 때 요소를 display:block;으로 바꿔주는 함수</span>
+        <div class="test-content">
+          <div class="circle"></div>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test51">
+        <span class="test-tit">51. siblings( ) - 자신을 제외한 형제 요소들을 찾는 함수, 형제 객체들에 class 추가하거나 삭제할 때 주로 이용</span>
+        <div class="test-content">
+          <ul>
+            <li>item 1</li>
+            <li class="second-item">item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+          </ul>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test52">
+        <span class="test-tit">52. size( ) - size(), length 는 일치하는 요소 수를 반환한다.</span>
+        <div class="test-content">
+          <p>lorem</p>
+          <p>lorem</p>
+          <p>lorem</p>
+          <p>lorem</p>
+        </div>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test53">
+        <span class="test-tit">53. slideDown( ) - 선택한 요소를 서서히 아래쪽으로 나타나게 하는 메소드</span>
+        <div class="test-content">
+          <div class="bar"></div>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test54">
+        <span class="test-tit">54. slideUp( ) - 선택한 요소를 서서히 위쪽으로 사라지게 하는 메소드</span>
+        <div class="test-content">
+          <div class="bar"></div>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test55">
+        <span class="test-tit">55. text( ) - 선택한 요소 안의 내용을 가져오거나 다른 내용으로 바꾸는 메소드</span>
+        <div class="test-content">
+          <h2>안녕하세요</h2>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+        <button class="btn" type="button">Click</button>
+      </div>
+      <div class="test test56">
+        <span class="test-tit">56. val( ) - form의 값을 가져오거나 값을 설정하는 메소드 <span class="desc"> ex) input에 입력 후 확인버튼을 누르면 alert창에 값 표시</span></span>
+        <div class="test-content">
+          <input id="inputId" placeholder="아이디를 입력해주세요" type="text">
+          <button id="btnId" type="button">확인</button>
+        </div>
+        <button class="btn off1" type="button">reset</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

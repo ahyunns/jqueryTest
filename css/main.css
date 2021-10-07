@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* header */
+header {border-bottom: 1px solid #666; height: 80px;}
+header .tit {font-size: 20px; font-weight: 600; text-align: center; line-height: 80px;}
+
+/* main */
+#wrap {padding: 30px; background-color: #f2f2f2;}
+
+ul {margin-left: 20px;}
+
+.test {padding: 20px 0;}
+.test-tit {margin-bottom: 12px; display: block; font-weight: 600; color: #0769ad;}
+.test-content {padding: 20px; background-color: #fff;}
+
+.btn {margin-top: 20px; font-size: 14px; color: #fff; padding: 6px 12px; border: none; border-radius: 4px; background-color: #0276f9; cursor: pointer;}
+.btn.off1 {color: #0276f9; border: 1px solid #0276f9; background-color: #fff; }
+.btn-bg {color: #fff; border: none; border-radius: 5px; background-color: #000; cursor: pointer;}
+
+.desc {display: block; font-size: 14px; color: #000; font-weight: 500;}
+
+.highlight {background-color: #c6ffc6;}
+
+.box {width: 100px; height: 100px; background-color: #b572f5;}
+.box1 {display: inline-block; padding: 0 10px; border: 1px solid #000;}
+
+.red {color: #f00;}
+.even {color: #c6ffc6;}
+.active {background-color: #c6ffc6;}
+.hidden {display: none;}
+
+.circle {display: none; width: 100px; height: 100px; background-color: #b572f5; border-radius: 50%;}
+.bar {display: none; height: 100px; background-color: #bbdefb;}
+.test54 .bar {display: block; background-color: #ffcdd2;}
+
+.test20 .test-content .circle {display: block;}
+.test21 em {font-style: italic;}
+.test38 .circle {margin-left: 100px; display: block; border: 2px dashed #b572f5; background-color: inherit;}
+.test39 .test-content span {cursor: pointer;}
+.test40 .test-content ul *, .test41 .test-content ul * {display: block; width: 50%; margin: 15px; padding: 10px; border: 1px solid #000;}
+.test44 .test-content a {display: inline-block; border: 1px solid #f00;}
+.test48 .test-content p {width: 50%; padding: 10px; text-align: center; border: 1px solid #000;}
